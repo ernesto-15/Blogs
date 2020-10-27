@@ -15,7 +15,7 @@ Tal vez pienses que estos son solo "detalles" o que no tienen importancia, pero 
 
 La terminal es de suma importancia para un desarrollador y las preferidas por la mayoría de estos son las de Linux o macOS, los cuales son sistemas operativos basados en UNIX.
 
-¡Hola! Soy Ernesto y en este post voy a enseñarte a obtener todo el poder 💪 de una **terminal Linux dentro de Windows con WSL** (sí, **sin nada de particiones de disco**). Y, por qué no, en el siguiente post, también te enseñaré como hacer que tu terminal se vea como la de un pro, para que dejes de usar esa terminal tan horrenda 🤢 llamada `cmd`.
+¡Hola! Soy Ernesto y en este post voy a enseñarte a obtener todo el poder 💪 de una **terminal Linux dentro de Windows con WSL** (sí, **sin nada de particiones de disco**). Y, por qué no, en el siguiente post, también te enseñaré como hacer que tu terminal se vea como la de todo un profesional.
 
 ---
 # Tabla de contenidos
