@@ -138,6 +138,5 @@ Si tienes algún aporte, comentario o recomendación, escríbela en los comentar
 ---
 # Recursos
 * [https://docs.microsoft.com/en-us/windows/wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-* [https://es.wikipedia.org/wiki/Windows_Subsystem_for_Linux](https://es.wikipedia.org/wiki/Windows_Subsystem_for_Linux)
 * [https://fireship.io/lessons/windows-10-for-web-dev/](https://fireship.io/lessons/windows-10-for-web-dev/)
 ---
