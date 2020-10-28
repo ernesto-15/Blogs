@@ -1,6 +1,5 @@
-## ¿Sigues usando CMD en 2020? Te presento a WSL - Parte 1
+## ¿Sigues usando CMD en 2020? Te presento a WSL
 
-# A todos nos ha pasado
 Si estas empezando en el desarrollo web y tu computadora es Windows, seguramente te haz cruzado con diversos cursos o tutoriales en los que el instructor o instructora tenía una terminal que se veía más o menos así 🤩:
 
 ![Terminal.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1603748720519/yfPQtr-1W.png)
@@ -13,8 +12,6 @@ Tal vez pienses que estos son solo "detalles" o que no tienen importancia, pero 
 
 >Como dice un dicho muy popular y **muy cierto**: **"La terminal es la mejor amiga 💙 del programador"**
 
-La terminal es de suma importancia para un desarrollador y las preferidas por la mayoría de estos son las de Linux o macOS, los cuales son sistemas operativos basados en UNIX.
-
 ¡Hola! Soy Ernesto y en este post voy a enseñarte a obtener todo el poder 💪 de una **terminal Linux dentro de Windows con WSL** (sí, **sin nada de particiones de disco**). Y, por qué no, en el siguiente post, también te enseñaré como hacer que tu terminal se vea como la de todo un profesional.
 
 ---
@@ -26,9 +23,9 @@ La terminal es de suma importancia para un desarrollador y las preferidas por la
   3. [Actualizar a WSL 2](#actualizar-a-wsl-2)
     1. [Habilitar VMP *(Virtual Machine Plataform)*](#habilitar-vmp-virtual-machine-plataform)
     2. [Instalar el kernel de Linux](#instalar-el-kernel-de-linux)
-    3. [Configura WSL 2 como la versión por defecto](#configura-wsl-2-como-la-version-por-defecto)
-  4. [Instalar Windows Terminal](#instalar-windows-terminal)
-3. [Siguientes pasos](#siguientes-pasos)
+    3. [Configurar WSL 2 como la versión por defecto](#configurar-wsl-2-como-la-version-por-defecto)
+3. [Instalación Windows Terminal](#instalacion-de-windows-terminal)
+4. [Siguientes pasos](#siguientes-pasos)
 ---
 
 
@@ -100,7 +97,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 #### Instalar el kernel de Linux
 Descarga el kernel en este [link](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi), ejecuta el instalador descargado e instala el kernel aceptando todos los permisos solicitados.
 
-#### Configura WSL 2 como la versión por defecto
+#### Configurar WSL 2 como la versión por defecto
 Ejecuta el siguiente comando en PowerShell:
 
 ```powershell
@@ -115,7 +112,7 @@ Con esta configuración todas las distros que se instalen posteriormente correra
 wsl --set-version Ubuntu 2
 ```
 
-### Instalar Windows Terminal
+# Instalación de Windows Terminal
 Microsoft tiene una aplicación que nos facilita el trabajo con la terminal y también movernos entre terminales PowerShell, CMD, Ubuntu o incluso Azure.
 
 ![Windows-terminal.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1603754651476/ECEFKMVG9.png)
@@ -133,7 +130,7 @@ Felicitaciones! ⭐ Ya tienes instalado WSL y ya eres capaz de usar la toda pode
 
 No te preocupes. En el siguiente post te enseñaré, como lo prometí, a transformar tu terminal en toda una hermosura. Todo esto gracias a `zsh` y `oh-my-zsh` 😉.
 
-Si tienes algún aporte, comentario o recomendación, escríbela en los comentarios. Me es de gran ayuda para mejorar mi contenido 😃. Nos vemos en el siguiente post 👋.
+Si te gusto el post o te ayudó en algo dale like y si tienes algún aporte, comentario o recomendación, escríbela en los comentarios. Me es de gran ayuda para mejorar mi contenido 😃. Nos vemos en el siguiente post 👋.
 
 ---
 # Recursos
