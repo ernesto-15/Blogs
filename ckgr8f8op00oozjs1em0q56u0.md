@@ -134,5 +134,8 @@ Si te gusto el post o te ayudó en algo dale like y si tienes algún aporte, com
 
 ---
 # Recursos
+
+
 * [https://docs.microsoft.com/en-us/windows/wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+* [https://docs.microsoft.com/en-us/windows/wsl/about](https://docs.microsoft.com/en-us/windows/wsl/about)
 ---
