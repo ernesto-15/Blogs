@@ -12,7 +12,7 @@ Tal vez pienses que estos son solo "detalles" o que no tienen importancia, pero 
 
 >Como dice un dicho muy popular y **muy cierto**: **"La terminal es la mejor amiga 💙 del programador"**
 
-¡Hola! Soy Ernesto y en este post voy a enseñarte a obtener todo el poder 💪 de una **terminal Linux dentro de Windows con WSL** (sí, **sin nada de particiones de disco**). Y, por qué no, en el siguiente post, también te enseñaré como hacer que tu terminal se vea como la de todo un profesional.
+¡Hola! Soy Ernesto y en este post voy a enseñarte a obtener todo el poder 💪 de una **terminal Linux dentro de Windows con WSL** (sí, **sin nada de particiones de disco**). Y, por qué no, en el [siguiente post](https://ernestoangulo.hashnode.dev/zsh-oh-my-zsh-una-terminal-hermosa-y-poderosa), también te enseñaré como hacer que tu terminal se vea como la de todo un profesional.
 
 ---
 # Tabla de contenidos
@@ -128,7 +128,7 @@ En la tienda busca "terminal" e instálala. Una vez instalada, abre la aplicaci�
 # Siguientes pasos
 Felicitaciones! ⭐ Ya tienes instalado WSL y ya eres capaz de usar la toda poderosa terminal de Linux en tu computadora Windows sin la necesidad de una partición de disco 😎. Técnicamente ya tienes todo el poder de la terminal en tus manos. Sin embargo, aún tenemos un pequeño problema, nuestra terminal no se ve tan bonita 😥.
 
-No te preocupes. En el siguiente post te enseñaré, como lo prometí, a transformar tu terminal en toda una hermosura. Todo esto gracias a `zsh` y `oh-my-zsh` 😉.
+No te preocupes. En el [siguiente post](https://ernestoangulo.hashnode.dev/zsh-oh-my-zsh-una-terminal-hermosa-y-poderosa) te enseñaré, como lo prometí, a transformar tu terminal en toda una hermosura. Todo esto gracias a `zsh` y `oh-my-zsh` 😉.
 
 Si te gusto el post o te ayudó en algo dale like y si tienes algún aporte, comentario o recomendación, escríbela en los comentarios. Me es de gran ayuda para mejorar mi contenido 😃. Nos vemos en el siguiente post 👋.
 
