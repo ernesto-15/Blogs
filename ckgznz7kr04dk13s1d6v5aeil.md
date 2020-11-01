@@ -25,7 +25,7 @@ Sin embargo, al abrir la terminal y al empezar a usarla, tal vez sientas que se 
 5. [Instalación de Powerlevel10k](#instalacion-de-powerlevel10k)
   1. [Instalar NerdFonts](#instalar-nerdfonts) 
   2. [Clonar repositorio de GitHub](#clonar-repositorio-de-github)
-  3. [Establecer Powelevel10k como tema por defecto](#establecer-powelevel10k-como-tema-por-defecto)
+  3. [Establecer Powerlevel10k como tema por defecto](#establecer-powerlevel10k-como-tema-por-defecto)
 6. [Configuración de Windows Terminal](#configuracion-de-windows-terminal)
   1. [Cambiar fuente](#cambiar-fuente)
   2. [Cambiar tema (opcional)](#cambiar-tema-opcional)
@@ -173,7 +173,7 @@ Para clonar el [repositorio](https://github.com/romkatv/powerlevel10k) ejecuta e
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 ```
 
-### Establecer Powelevel10k como tema por defecto
+### Establecer Powerlevel10k como tema por defecto
 Llegó el momento de establecer Powerlevel10k como tu tema por defecto en el archivo `.zshrc`. En la configuración `ZSH_THEME` escribe lo siguiente:
 ```
 ZSH_THEME="powerlevel10k/powerlevel10k"
