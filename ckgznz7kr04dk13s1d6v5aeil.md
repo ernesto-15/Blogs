@@ -47,7 +47,7 @@ Sin embargo, al abrir la terminal y al empezar a usarla, tal vez sientas que se 
 
 # ¿Qué es Oh My Zsh?
 Es un *framework open source* para manejar la configuración de **Zsh**. **Oh My Zsh** viene incluido con *plugins* y más de 150 temas que nos ayudarán a facilitar nuestro trabajo y harán que nuestra terminal se vea genial.
->Aparte de los 150 temas que vienen incluidos, también puedes instalar otros, de los cuales el más popular es **Powelevel10k**.
+>Aparte de los 150 temas que vienen incluidos, también puedes instalar otros, de los cuales el más popular es **Powerlevel10k**.
 
 Antes de empezar recuerda que:
 
