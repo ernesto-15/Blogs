@@ -8,7 +8,7 @@ Entonces, es posible usar la terminal de Ubuntu en una ventana y Microsoft Excel
 
 Si ya tienes instalado WSL, tal vez te estés preguntando ¿Ahora como empiezo a usarlo en mis proyectos? 🤔
 
-¡Hola! Soy Ernesto y en este post voy a enseñarte como instalar, en WSL, **herramientas que son indispensables para un desarrollador web como Git o Node**, algunos **problemas** con los que me encontré al instalarlas y, por supuesto, como solucionarlos para que puedas desde ya a empezar a usar WSL para tus proyectos.
+¡Hola! Soy Ernesto y en este post voy a enseñarte como instalar, en WSL, **herramientas que son indispensables para un desarrollador web como Git o Node** para que puedas, desde ya, a empezar a usar WSL para tus proyectos.
 
 ---
 # Tabla de contenidos
