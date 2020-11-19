@@ -22,7 +22,7 @@ Hi! I'm Ernesto, and in this post, I am going to teach you how to get all the po
   2. [Install a Linux distro](#install-a-linux-distro)
   3. [Update to WSL2](#update-to-wsl2)
     1. [Enable VMP (Virtual Machine Plataform)](#enable-vmp-virtual-machine-plataform)
-    2. [Install the Linux kernel](#intall-the-linux-kernel)
+    2. [Install the Linux kernel](#install-the-linux-kernel)
     3. [Set WSL 2 as the default version](#set-wsl-2-as-the-default-version)
 3. [Install Windows Terminal](#install-windows-terminal)
 4. [Next steps](#next-steps)
