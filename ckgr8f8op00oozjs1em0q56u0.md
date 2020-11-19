@@ -137,4 +137,4 @@ If this post helped you, please give it a reaction. And If you have any contribu
 * [https://docs.microsoft.com/en-us/windows/wsl/about](https://docs.microsoft.com/en-us/windows/wsl/about)
 ---
 
-*If you want to read the Spanish version of this post, you can find it [here](https://medium.com/@netosym/sigues-usando-cmd-en-2020-te-presento-a-wsl-f33089c5c791).*
+*If you want to read the Spanish version of this post, you can find it [here](https://netosym.medium.com/sigues-usando-cmd-en-2020-te-presento-a-wsl-f33089c5c791).*
