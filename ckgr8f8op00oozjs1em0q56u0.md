@@ -17,7 +17,7 @@ Hi! I'm Ernesto, and in this post, I am going to teach you how to get all the po
 ---
 # Table of content
 1. [¿What is WSL?](#what-is-wsl)
-2. [Installation of WSL](#installation-of-wsl)
+2. [Install WSL](#install-wsl)
   1. [Enable WSL](#enable-wsl)
   2. [Install a Linux distro](#install-a-linux-distro)
   3. [Update to WSL2](#update-to-wsl2)
@@ -38,7 +38,7 @@ WSL is a compatibility layer developed by Microsoft for running Linux binary exe
 >With WSL, we can run Adobe Photoshop or Microsoft Word in a window and Ubuntu in another. All at the same time!
 
 
-# Installation of WSL
+# Install WSL
 To install WSL, you must match these requirements:
 
 * Have Windows 10 installed
