@@ -1,5 +1,7 @@
 ## Are you still using CMD? Let me introduce you to WSL
 
+*If you want to read the Spanish version of this post, you can find it [here](https://medium.com/@netosym/sigues-usando-cmd-en-2020-te-presento-a-wsl-f33089c5c791)*
+
 If you are new to web development and your PC is Windows, surely you have watched several courses or tutorials in which their instructors had a terminal that looked something like this: 🤩
 
 ![Terminal.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1603748720519/yfPQtr-1W.png)
