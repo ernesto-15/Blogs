@@ -1,7 +1,5 @@
 ## Are you still using CMD? Let me introduce you to WSL
 
-*If you want to read the Spanish version of this post, you can find it [here](https://medium.com/@netosym/sigues-usando-cmd-en-2020-te-presento-a-wsl-f33089c5c791)*
-
 If you are new to web development and your PC is Windows, surely you have watched several courses or tutorials in which their instructors had a terminal that looked something like this: 🤩
 
 ![Terminal.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1603748720519/yfPQtr-1W.png)
@@ -14,7 +12,7 @@ You may think these are just unimportant details, but there is nothing further f
 
 >As a very popular saying says: **The terminal is a developer's best friend. 💙**
 
-Hi! I'm Ernesto, and in this post, I am going to teach you how to get all the power 💪 of a **Linux terminal inside Windows (without disk partitions)**. And, why not, in the next post, I am going to teach you how to make your terminal look beautiful.
+Hi! I'm Ernesto, and in this post, I am going to teach you how to get all the power 💪 of a **Linux terminal inside Windows (without disk partitions)**. 
 
 ---
 # Table of content
@@ -128,7 +126,7 @@ And there you have it! You have, now, WSL installed on your computer. 😎
 # Next steps
 Congrats! ⭐ You can now use all the power the terminal has to offer inside your Windows computer without the need for a disk partition. 🤩 However, we still have a problem. The terminal looks kind of ugly. 😥
 
-Well, no worries! In the [next post](https://ernestoangulo.hashnode.dev/zsh-oh-my-zsh-una-terminal-hermosa-y-poderosa), as I promised, I am going to teach you how to make your terminal look awesome. All thanks to Zsh and Oh-My-Zsh. 😉
+Well, no worries! In [this post](https://ernestoangulo.hashnode.dev/zsh-oh-my-zsh-una-terminal-hermosa-y-poderosa), I teach you how to make your terminal look awesome. All thanks to Zsh and Oh-My-Zsh. 😉
 
 If this post helped you, please give it a reaction. And If you have any contribution, comment, or recommendation, write it down in the comments section. It helps me a lot to improve my content. 😃 See you in the next post. 👋
 
@@ -138,3 +136,5 @@ If this post helped you, please give it a reaction. And If you have any contribu
 * [https://docs.microsoft.com/en-us/windows/wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 * [https://docs.microsoft.com/en-us/windows/wsl/about](https://docs.microsoft.com/en-us/windows/wsl/about)
 ---
+
+*If you want to read the Spanish version of this post, you can find it [here](https://medium.com/@netosym/sigues-usando-cmd-en-2020-te-presento-a-wsl-f33089c5c791).*
