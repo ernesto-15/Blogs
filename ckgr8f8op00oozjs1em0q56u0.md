@@ -1,140 +1,137 @@
-## ¿Sigues usando CMD en 2020? Te presento a WSL
+## Are you still using CMD? Let me introduce you to WSL
 
-Si estas empezando en el desarrollo web y tu computadora es Windows, seguramente te haz cruzado con diversos cursos o tutoriales en los que el instructor o instructora tenía una terminal que se veía más o menos así 🤩:
+If you are new to web development and your PC is Windows, surely you have watched several courses or tutorials in which their instructors had a terminal that looked something like this: 🤩
 
 ![Terminal.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1603748720519/yfPQtr-1W.png)
 
-O ejecutaba comandos como `clear` o `ls`, los cuales tratabas de ejecutar en tu terminal pero no funcionaban e imprimían un error. Bueno si tienes este problema, déjame decirte que estas usando la terminal equivocada 😅.
+Or ran commands such as clear or ls, which you tried to run in your terminal, but they did not work and printed an error. Well, if you have those issues, let me tell you that you're using the wrong terminal. 😅
 
 ![Cmd.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1603748851899/qS9v7N5il.png)
 
-Tal vez pienses que estos son solo "detalles" o que no tienen importancia, pero no hay nada más alejado de la realidad.
+You may think these are just unimportant details, but there is nothing further from reality.
 
->Como dice un dicho muy popular y **muy cierto**: **"La terminal es la mejor amiga 💙 del programador"**
+>As a very popular saying says: **The terminal is a developer's best friend. 💙**
 
-¡Hola! Soy Ernesto y en este post voy a enseñarte a obtener todo el poder 💪 de una **terminal Linux dentro de Windows con WSL** (sí, **sin nada de particiones de disco**). Y, por qué no, en el [siguiente post](https://ernestoangulo.hashnode.dev/zsh-oh-my-zsh-una-terminal-hermosa-y-poderosa), también te enseñaré como hacer que tu terminal se vea como la de todo un profesional.
+Hi! I'm Ernesto, and in this post, I am going to teach you how to get all the power 💪 of a **Linux terminal inside Windows (without disk partitions)**. And, why not, in the next post, I am going to teach you how to make your terminal look beautiful.
 
 ---
-# Tabla de contenidos
-1. [¿Qué es WSL?](#que-es-wsl)
-2. [Instalación de WSL](#instalacion-de-wsl)
-  1. [Habilitar WSL](#habilitar-wsl)
-  2. [Instalar una distro de Linux](#instalar-una-distro-de-linux)
-  3. [Actualizar a WSL 2](#actualizar-a-wsl-2)
-    1. [Habilitar VMP *(Virtual Machine Plataform)*](#habilitar-vmp-virtual-machine-plataform)
-    2. [Instalar el kernel de Linux](#instalar-el-kernel-de-linux)
-    3. [Configurar WSL 2 como la versión por defecto](#configurar-wsl-2-como-la-version-por-defecto)
-3. [Instalación Windows Terminal](#instalacion-de-windows-terminal)
-4. [Siguientes pasos](#siguientes-pasos)
+# Table of content
+1. [¿What is WSL?](#what-is-wsl)
+2. [Installation of WSL](#installation-of-wsl)
+  1. [Enable WSL](#enable-wsl)
+  2. [Install a Linux distro](#install-a-linux-distro)
+  3. [Update to WSL2](#update-to-wsl2)
+    1. [Enable VMP (Virtual Machine Plataform)](#enable-vmp-virtual-machine-plataform)
+    2. [Install the Linux kernel](#intall-the-linux-kernel)
+    3. [Set WSL 2 as the default version](#set-wsl-2-as-the-default-version)
+3. [Install Windows Terminal](#install-windows-terminal)
+4. [Next steps](#next-steps)
 ---
 
 
-# ¿Qué es WSL?
-Antes de empezar, debemos hablar de WSL *(Windows Subsystem for Linux)* que es una pieza muy importante para poder correr Linux dentro de Windows.
-
-WSL es una capa de compatibilidad desarrollada por Microsoft para correr ejecutables de Linux nativamente en Windows. En otras palabras, nos permite **instalar distros de Linux REALES como Ubuntu en Windows**. Lo que significa que podemos utilizar herramientas como `bash` o `zsh` para administrar nuestros archivos de Windows 🤯.
-
->Con WSL podremos ejecutar Adobe Photoshop (no disponible en Linux) en una ventana y Ubuntu en otra, todo al mismo tiempo.
+# ¿What is WSL?
+Before we begin, we should talk about what WSL (Windows Subsystem for Linux) is.
 
 
-# Instalación de WSL
-Para poder instalar WSL en tu computadora, primero debes asegurarte de cumplir estos requisitos:
-* Tener Windows 10
-* Tener como mínimo la versión 1607 para WSL 1. Para WSL 2 la versión mínima es la 1903.
- * *Para ver la versión de Windows que posees sigue estos pasos:*
-   1. Presiona la combinación de teclas `Windows + R`.
-   2. Escribe `winver` y presiona enter.
-* Para WSL 2 también es necesario tener la virtualización habilitada
- * *Para habilitar la virtualización te invito a ver [este video](https://www.youtube.com/watch?v=B1oCkcOHXPA&list=LL&index=12&ab_channel=%EA%A7%81Tut%E2%9C%BFsVicky34%EA%A7%82).*
+WSL is a compatibility layer developed by Microsoft for running Linux binary executables natively on Windows 10. In simpler words, it allows us to install real Linux distros, like Ubuntu, all inside Windows. This means we can use tools like bash or zsh to manage our Windows files. 🤯
 
-### Habilitar WSL
-Abre PowerShell como administrador y ejecuta el siguiente comando:
+>With WSL, we can run Adobe Photoshop or Microsoft Word in a window and Ubuntu in another. All at the same time!
+
+
+# Installation of WSL
+To install WSL, you must match these requirements:
+
+* Have Windows 10 installed
+* Have, at least, 1607 version for WSL 1 and 1903 for WSL 2.
+ * *To see your Windows version, follow these steps:*
+   1. Press `Windows + R`.
+   2. Write "winver" and press enter
+* Also, for WSL 2, it is necessary to enable virtualization
+ * *To enable it, watch [this video](https://www.youtube.com/watch?v=B1oCkcOHXPA&list=LL&index=12&ab_channel=%EA%A7%81Tut%E2%9C%BFsVicky34%EA%A7%82).*
+
+### Enable WSL
+Open PowerShell as administrator and run this command.
 ```powershell
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
-*Una vez el proceso termina, debes reiniciar tu computadora.*
+*When the process finishes, restart your computer.*
 
-### Instalar una distro de Linux
-Abre la tienda de Microsoft *(Microsoft Store)* y busca "Linux". Puedes instalar la distro que prefieras y si no te puedes decidir, te recomiendo que instales Ubuntu.
+### Install a Linux distro
+Open Microsoft Store and search "Linux". You can install the distro of your preference, but if you're not sure, I recommend you choose Ubuntu.
 
 ![Ubuntu-microsoft-store.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1603759079236/WWDXckXTv.png)
 
-Cuando termine la instalación, abre la terminal Ubuntu en donde se mostrará el mensaje de que se esta instalando, al terminar pedirá la siguiente información:
-* Nombre de usuario
-* Contraseña de superusuario *(root)* y confirmación de la misma
-
+When the installation finishes, open Ubuntu and wait until the installation ends. After that, write a new UNIX **username and password**.
 
 ![Installing-Ubuntu.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1603751635842/kyk9uQSJX.png)
 
-***No olvides guardar esta contraseña en un lugar seguro.***
+***Don't forget to save your information in a secure place.***
 
-### Actualizar a WSL 2
-WSL 2 es la segunda versión de WSL. Es muy superior en rendimiento, ofrece mayor compatibilidad y es la recomendada por Microsoft.
+### Update to WSL2
+It is the second version of WSL. It increases file system performance and supports full system call compatibility.
 
-*Si quieres ver la comparación entre WSL 1 y 2 con mayor detalle, te invito a leer [este blog de Microsoft](https://docs.microsoft.com/en-us/windows/wsl/compare-versions).*
+*If you want to read a full comparison between versions 1 and 2, read [this blog](https://docs.microsoft.com/en-us/windows/wsl/compare-versions) from Microsoft.*
 
-> Para este paso es importante cumplir los requisitos mencionados al [principio la instalación **(versión y virtualización)**](#instalacion-de-wsl). Si no cumples con estos requisitos, salta este paso y ve al [siguiente](#instalar-windows-terminal).
+>For this step, it is mandatory to match all requirements for WSL 2 I mentioned at the [beginning of the installation](#installation-of-wsl). If you don't match the requirements skip this step and [go to the next one](#install-windows-terminal).
 
-Antes de actualizar, revisa la versión de WSL que tienes actualmente. Abre PowerShell y ejecuta el siguiente comando:
+Before updating, check your current version by running the following command in PowerShell:
 
 ```powershell
 wsl -l -v
 ```
 
-Este comando muestra las distribuciones que tenemos instaladas y la versión de WSL en la que están corriendo.
+This command will show all distros we have installed and the version of WSL they are running in.
 
 ![WSL-version.jpg](https://cdn.hashnode.com/res/hashnode/image/upload/v1603753788729/tqP7rgcj9.jpeg)
 
-#### Habilitar VMP *(Virtual Machine Plataform)*
-Ahora, para actualizar a la versión 2, debes ejecutar el siguiente comando en PowerShell para habilitar la plataforma de maquina virtual:
+#### Enable VMP (Virtual Machine Plataform)
+Now, to enable VMP, you have to run this command in PowerShell:
 
 ```powershell
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-*Una vez el proceso termina, debes reiniciar tu computadora.*
+*Once the process finishes, restart your computer*
 
-#### Instalar el kernel de Linux
-Descarga el kernel en este [link](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi), ejecuta el instalador descargado e instala el kernel aceptando todos los permisos solicitados.
+#### Install the Linux kernel
+Download the kernel from [this link](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi), execute the installer, and accept all permissions.
 
-#### Configurar WSL 2 como la versión por defecto
-Ejecuta el siguiente comando en PowerShell:
+#### Set WSL 2 as the default version
+Run the following command in PowerShell:
 
 ```powershell
 wsl --set-default-version 2
 ```
 
-Con esta configuración todas las distros que se instalen posteriormente correran en WSL 2 por defecto.
+With this configuration, all distros you install are going to run in WSL 2.
 
-*Si ya tenías una distro instalada antes de actualizar a WSL 2, el cual es nuestro caso, debes actualizarla de manera manual con el siguiente comando:*
+*If you already had a distro installed, you must update it manually with this command:*
 
 ```powershell
 wsl --set-version Ubuntu 2
 ```
 
-# Instalación de Windows Terminal
-Microsoft tiene una aplicación que nos facilita el trabajo con la terminal y también movernos entre terminales PowerShell, CMD, Ubuntu o incluso Azure.
+# Install Windows Terminal
+It is an application developed by Microsoft that makes working with multiple terminals easier.
 
 ![Windows-terminal.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1603754651476/ECEFKMVG9.png)
 
-En la tienda busca "terminal" e instálala. Una vez instalada, abre la aplicación, y selecciona la terminal de Ubuntu (también podrás seleccionar PowerShell o CMD).
+In the Microsoft Store search for "terminal" and install it. Once the installation finishes, open the Windows Terminal app and select the Ubuntu (you can select PowerShell, CMD, or Azure too).
 
-¡Y listo! Ya tienes instalado WSL en tu computadora 😁.
-
+And there you have it! You have, now, WSL installed on your computer. 😎
 
 ![Windows-terminal-installed.jpg](https://cdn.hashnode.com/res/hashnode/image/upload/v1603756300419/51SkhpkK-.jpeg)
 
 
-# Siguientes pasos
-Felicitaciones! ⭐ Ya tienes instalado WSL y ya eres capaz de usar la toda poderosa terminal de Linux en tu computadora Windows sin la necesidad de una partición de disco 😎. Técnicamente ya tienes todo el poder de la terminal en tus manos. Sin embargo, aún tenemos un pequeño problema, nuestra terminal no se ve tan bonita 😥.
+# Next steps
+Congrats! ⭐ You can now use all the power the terminal has to offer inside your Windows computer without the need for a disk partition. 🤩 However, we still have a problem. The terminal looks kind of ugly. 😥
 
-No te preocupes. En el [siguiente post](https://ernestoangulo.hashnode.dev/zsh-oh-my-zsh-una-terminal-hermosa-y-poderosa) te enseñaré, como lo prometí, a transformar tu terminal en toda una hermosura. Todo esto gracias a `zsh` y `oh-my-zsh` 😉.
+Well, no worries! In the [next post](https://ernestoangulo.hashnode.dev/zsh-oh-my-zsh-una-terminal-hermosa-y-poderosa), as I promised, I am going to teach you how to make your terminal look awesome. All thanks to Zsh and Oh-My-Zsh. 😉
 
-Si te gusto el post o te ayudó en algo dale like y si tienes algún aporte, comentario o recomendación, escríbela en los comentarios. Me es de gran ayuda para mejorar mi contenido 😃. Nos vemos en el siguiente post 👋.
+If this post helped you, please give it a reaction. And If you have any contribution, comment, or recommendation, write it down in the comments section. It helps me a lot to improve my content. 😃 See you in the next post. 👋
 
 ---
-# Recursos
-
+# Resources
 
 * [https://docs.microsoft.com/en-us/windows/wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 * [https://docs.microsoft.com/en-us/windows/wsl/about](https://docs.microsoft.com/en-us/windows/wsl/about)
