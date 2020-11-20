@@ -67,7 +67,7 @@ sudo apt update
 ```
 This command will verify if there exists any update available for your packages.
 
-*Don't forget that when you use sudo, you will have to enter the password you created when [installing Ubuntu]() or any other distro.*
+*Don't forget that when you use sudo, you will have to enter the password you created when [installing Ubuntu](https://ernestoangulo.hashnode.dev/are-you-still-using-cmd-let-me-introduce-you-to-wsl#install-a-linux-distro) or any other distro.*
 
 When the process finishes, it will list all packages that need to be updated. To upgrade them run this command.
 
