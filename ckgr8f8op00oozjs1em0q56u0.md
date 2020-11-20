@@ -16,7 +16,7 @@ Hi! I'm Ernesto, and in this post, I am going to teach you how to get all the po
 
 ---
 # Table of content
-1. [¿What is WSL?](#what-is-wsl)
+1. [What is WSL?](#what-is-wsl)
 2. [Install WSL](#install-wsl)
   1. [Enable WSL](#enable-wsl)
   2. [Install a Linux distro](#install-a-linux-distro)
@@ -29,7 +29,7 @@ Hi! I'm Ernesto, and in this post, I am going to teach you how to get all the po
 ---
 
 
-# ¿What is WSL?
+# What is WSL?
 Before we begin, we should talk about what WSL (Windows Subsystem for Linux) is.
 
 
@@ -72,7 +72,7 @@ It is the second version of WSL. It increases file system performance and suppor
 
 *If you want to read a full comparison between versions 1 and 2, read [this blog](https://docs.microsoft.com/en-us/windows/wsl/compare-versions) from Microsoft.*
 
->For this step, it is mandatory to match all requirements for WSL 2 I mentioned at the [beginning of the installation](#installation-of-wsl). If you don't match the requirements skip this step and [go to the next one](#install-windows-terminal).
+>For this step, it is mandatory to match all requirements for WSL 2 I mentioned at the [beginning of the installation](##install-wsl). If you don't match the requirements skip this step and [go to the next one](#install-windows-terminal).
 
 Before updating, check your current version by running the following command in PowerShell:
 
@@ -126,9 +126,11 @@ And there you have it! You have, now, WSL installed on your computer. 😎
 # Next steps
 Congrats! ⭐ You can now use all the power the terminal has to offer inside your Windows computer without the need for a disk partition. 🤩 However, we still have a problem. The terminal looks kind of ugly. 😥
 
-Well, no worries! In [this post](https://ernestoangulo.hashnode.dev/zsh-oh-my-zsh-una-terminal-hermosa-y-poderosa), I teach you how to make your terminal look awesome. All thanks to Zsh and Oh-My-Zsh. 😉
+Well, no worries! In [this post](https://ernestoangulo.hashnode.dev/zsh-oh-my-zsh-a-powerful-and-beautiful-terminal), I teach you how to make your terminal look awesome. All thanks to Zsh and Oh-My-Zsh. 😉
 
-If this post helped you, please give it a reaction. And If you have any contribution, comment, or recommendation, write it down in the comments section. It helps me a lot to improve my content. 😃 See you in the next post. 👋
+If this post helped you, please give it a reaction. And If you have any contribution, comment, or recommendation, write it down in the comments section. It helps me a lot to improve my content. 😃 
+
+See you in the next post. 👋
 
 ---
 # Resources
