@@ -296,3 +296,5 @@ See you in the next post. 👋
 * [https://github.com/romkatv/powerlevel10k](https://github.com/romkatv/powerlevel10k)
 * [https://github.com/ohmyzsh/ohmyzsh/wiki/Themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
 ---
+
+If you want to read the Spanish version of this post, you can find it [here](https://netosym.medium.com/zsh-oh-my-zsh-una-terminal-hermosa-y-poderosa-b1baba287a34).
