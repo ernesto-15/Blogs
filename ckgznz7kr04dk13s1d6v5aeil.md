@@ -9,7 +9,7 @@ Hi! I'm Ernesto, and in this post, I am going to teach you how to install the Zs
 
 
 ---
-# Tabla de Contenidos
+# Table of content
 1. [What is Zsh?](#what-is-zsh)
 2. [What is Oh My Zsh?](#what-is-oh-my-zsh)
 3. [Install Zsh](#install-zsh)
