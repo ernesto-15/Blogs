@@ -1,53 +1,57 @@
-## Instalaciones que necesitarás para empezar a usar WSL en tus proyectos
+## What you need to start with WSL
 
-Históricamente, Windows nunca fue el sistema operativo favorito de los desarrolladores web, de hecho, Windows llegó a ser odiado por muchos de estos. 😅 Pero gracias ***Windows Subsystem for Linux (WSL)*** las cosas están cambiando. WSL permite trabajar con Linux y Windows al mismo tiempo. 
+Historically, Windows has not been the favorite operative system for most developers. 😅 But with the arrival of WSL, things are changing. It allows us to run **Linux and Windows at the same time**. Therefore, it is possible to run Ubuntu in one window and Microsoft Excel in another. 😍
 
-Entonces, es posible usar la terminal de Ubuntu en una ventana y Microsoft Excel en otra, y todo **al mismo tiempo! 😍**
+> If you have not seen the post in which I talk about WSL and how to install it, you can find it [here.](https://ernestoangulo.hashnode.dev/are-you-still-using-cmd-let-me-introduce-you-to-wsl)
 
-> Si aún no viste el post en el que hablo de WSL y como instalarlo, te lo dejo en [este enlace.](https://ernestoangulo.hashnode.dev/sigues-usando-cmd-en-2020-te-presento-a-wsl)
+Now that you have WSL installed on your computer, you may be wondering how do I start using it? 🤔
 
-Si ya tienes instalado WSL, tal vez te estés preguntando ¿Ahora como empiezo a usarlo en mis proyectos? 🤔
+Hi! I'm Ernesto, and in this post, I will show you how to install, in WSL, the mandatory tools that a web developer needs, like Git or Node. 😀
 
-¡Hola! Soy Ernesto y en este post voy a enseñarte como instalar, en WSL, **herramientas que son indispensables para un desarrollador web como Git o Node** para que puedas, desde ya, a empezar a usar WSL para tus proyectos.
+
 
 ---
-# Tabla de contenidos
+# Table of content
 
-1. [Instalación de Git](#instalacion-de-git)
-2. [Instalación de NodeJS](#instalacion-de-nodejs)
-    1. [Instalar NVM](#instalar-nvm)
-    2. [Instalar Node](#instalar-node)
-3. [Instalación de MySQL](#instalacion-de-mysql)
-    1. [Conectar MySQL](#conectar-mysql)
-    2. [Crear contraseña](#crear-contrasena)
-    3. [Conectar con MySQL Workbench](#conectar-con-mysql-workbench)
-4. [Ya puedes empezar](#ya-puedes-empezar)
+1. [Install Git](#install-git)
+2. [Install NodeJS](#install-nodejs)
+    1. [Install NVM](#install-nvm)
+    2. [Install Node](#install-node)
+3. [Install MySQL](#install-mysql)
+    1. [Connect MySQL](#connect-mysql)
+    2. [Create a password](#create-a-password)
+    3. [Connect with MySQL Workbench](#connect-with-mysql-workbench)
+4. [Conclusions](#conclusions)
 ---
 
-# Instalación de Git
-Para instalar Git en WSL ejecuta el siguiente comando:
+# Install Git
+To install Git in WSL, run this command:
+
 ```bash
 sudo apt install git
 ```
-Si la distribución que instalaste en WSL es Ubuntu, notarás que al ejecutar el comando `git --version` para verificar la versión de Git instalada, esta no es la última versión ofrecida por Git.
 
-Para actualizar a la última versión es necesario el PPA que ofrece Ubuntu, para agregarla ejecuta este comando:
+If the distro you have installed is Ubuntu, you'll notice that when you execute the `git --version` command to check the version, it is not the last one available.
+
+To update to the last version, we need the **PPA** Ubuntu offers; add it by running the following command:
+
 ```bash
 sudo add-apt-repository ppa:git-core/ppa
 ```
-*Recuerda que al usar sudo deberás ingresar tu contraseña de super usuario*
 
-Una vez agregado el PPA, verifica si existen actualizaciones y, si existen, instalalas.:
+*Remember that when you use sudo, you will have to enter your super-user password.*
+
+Once you added the PPA, check if there is any update and install it.
+
 ```bash
-# Verificar si existen actualizaciones disponibles
+# Check if there are any updates
 sudo apt update
 
-# Instalar actualizaciones
+# Install the updates
 sudo apt upgrade
 ```
-Ahora si verificas la versión de Git instalada, esta debe ser la última.
+Now, if you check your Git version, it should be the last one.
 
-***En la fecha de publicación de este post la última versión de Git es `2.29.2`***
 ```bash
 git --version
 # git version 2.29.2
@@ -55,36 +59,43 @@ git --version
 
 
 
-# Instalación de NodeJS
+# Install NodeJS
 Al igual que Git, Node es una herramienta indispensable para los desarrolladores web.
 
-### Instalar NVM
-La manera más recomendada de instalar Node en WSL es mediante NVM *(Node Package Manager)* que es un manejador de versiones de Node.
+### Install NVM
+The recommended way to install Node in WSL and any Linux distro is through NVM *(Node Package Manager)*.
 
-Si estas usando bash, instala NVM ejecutando este comando:
+If you are using Bash, install NVM by running this command:
+
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
-Si estas usando zsh, solo abre el archivo `.zshrc` y agrega el plugin de NVM.
+
+If you are using Zsh, open the .zshrc file and add the nvm plugin.
+
 ```bash
 plugins=(git nvm)
 ```
-*Si no sabes como ver que shell estas usando, ejecuta `echo $SHELL`*
+*If you are not sure whether you are using Bash or Zsh, run this command: `echo $SHELL`*
 
-> La ventaja de usar NVM es que es posible instalar más de una versión de Node y el intercambio entre ellas es muy fácil.
+> The great thing about NVM is that we can install more than one version of Node and use them as we want.
 
-### Instalar Node
-Una vez tienes NVM instalado, puedes instalar cualquier versión de Node ejecutando el siguiente comando.
+### Install Node
+Once you have NVM installed, you can install any version of Node you prefer.
+
 ```bash
 nvm install 15.1.0
 ```
-***En la fecha de publicación de este post la última versión de Node es `15.1.0`***
 
-Puedes cambiar `15.1.0` por la versión de Node que desees instalar. Para intercambiar una versión por cualquier otra, ejectua el siguiente comando:
+***By the time I wrote this blog, the last version of Node is `15.1.0`.***
+
+You can change the version you want to use by running this command:
+
 ```bash
-nvm use version_que_quieres_usar
+nvm use version_you_want_to_use
 ```
-Al instalar Node, también se instala NPM. Para comprobarlo, ejecuta los siguientes comandos:
+When you install NVM, you also install NPM. Check it by running the following:
+
 ```bash
 node -v
 # v14.12.0
@@ -93,8 +104,9 @@ npm -v
 # 6.14.8
 ```
 
-# Instalación de MySQL
-Antes de instalar MySQL debes asegurarte que todos tus paquetes esten actualizados, mediante los siguiente comandos:
+# Install MySQL
+Before you install MySQL, make sure all your packages are up to date.
+
 ```bash
 # Verificar si existen actualizaciones disponibles
 sudo apt update
@@ -102,72 +114,81 @@ sudo apt update
 # Instalar actualizaciones
 sudo apt upgrade
 ```
-Una vez los paquetes estén actualizados, ejecuta el siguiente comando para instalar MySQL.
+Once your packages are up to date, run this command to install MySQL:
+
 ```bash
 sudo apt install mysql-server
 ```
-Puedes confirmar la instalación ejecutando el siguiente comando que debe imprimir la versión actual de MySQL.
+
+You can check if the installation went well by running the following:
+
 ```bash
 mysql --version
 # mysql  Ver 8.0.22-0ubuntu0.20.04.2 for Linux on x86_64 ((Ubuntu))
 ```
 
-### Conectar MySQL
-Antes de conectarse a MySQL, es necesario que primero se debe iniciar el servicio.
+### Connect MySQL
+Before connecting, we have to run the MySQL service.
 ```bash
 sudo /etc/init.d/mysql start
 ```
-Una vez esta iniciado el servicio, conéctate a MySQL.
+Now you can connect to MySQL.
 ```bash
 sudo mysql
 ```
-*Y para cerrar la conexión ejecuta `exit`.*
+*If you want to exit MySQL, type `exit` and press enter*
 
-### Crear contraseña
-Es muy recomendado el tener una contraseña para proteger el acceso a MySQL.
+### Create a password
+It is mandatory to have a password to protect your access to MySQL. To create one, first, you have to connect to MySQL and run this command:
 
-Para crear una contraseña primero debes conectarte a MySQL y dentro de la consola debes ejecutar el siguiente comando.
 ```sql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'tu_contraseña';
 ```
-Una vez la contraseña es creada, para volver a conectarte a MySQL deberás hacerlo mediante el siguiente comando:
+
+Once you have your password, you can connect to MySQL by running this command:
+
 ```bash
 mysql -h localhost -u root -p
 ```
-*Te pedirá que ingreses la contraseña que acabas de crear, la ingresas y ya deberías poder conectarte de forma más segura.*
+
+*You will have to write the password you just created. **That is a better way to connect to MySQL.***
 
 ![mysql-console.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1604869354480/KHl4CijDI.png)
 
 
-### Conectar con MySQL Workbench
-En este paso es donde se ve la magia de WSL. Podrás usar un programa instalado en Windows como lo es MySQL Workbench con un servidor MySQL instalado y conectado en Linux. 🤯
-> Si no tienes MySQL Workbench instalado en tu computadora, lo puedes descargar e instalar en [este enlace](https://dev.mysql.com/downloads/workbench/).
+### Connect with MySQL Workbench
+In this step, you will see all the magic that WSL can do. You will run an app installed in Windows (MySQL Workbench) and connect it with a MySQL server that is running in Linux. 🤯🤯
 
-Una vez instalado, ejecuta el programa y crea una nueva conexión.
+> If you don't have MySQL Workbench installed, you can download and install it [here](https://dev.mysql.com/downloads/workbench/).
+
+Now, open it, and create a new connection.
 
 ![workbench-create-conecction.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1604869506107/wgpcP34ez.png)
 
-Ingresa el nombre de la conexión e ingresa la contraseña que creaste haciendo click en el botón *Store in Vault*.
-
+Enter the connection name and the password you created before by clicking the **"Store in Vault"** button.
 
 ![workbench-password.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1604869658194/LCFMBxz-_.png)
 
-Para probar la conexión dale click en Test Connection. Si la conexión es exitosa da click en *OK.*
+Now, to test the connection, click the **"Test Connection"** button.
 
 ![workbench-test-connection.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1604869700626/fJKQ5Rg3z.png)
 
-# Ya puedes empezar 🥳
-Y listo eso es todo. Estas listo para empezar a usar WSL con tus proyectos. Solo abre VS Code o el editor de tu presencia y empieza a codear. 👩‍💻 👨‍💻
+And that's it! You are ready to use WSL with your projects. Just open your favorite code editor and start coding. 👩‍💻 👨‍💻
 
-Existen muchísimas más herramientas que un desarrollador necesita, pero en este post quería cubrir solo las más básicas. Pero te recomiendo que si tienes alguna duda de como instalar cualquier herramienta, busques como instalarla en Ubuntu o la distribución que tengas instalada, después de todo estas ejecutando **Linux REAL dentro de Windows.** 😉
+# Conclusions
+There are a lot more tools 🛠️ that a developer needs, but I wanted to show the basic ones. However, if you have doubts on how to install any of them, I recommend you search how to install it in Ubuntu or any other Linux distro. After all, you are running real Linux. 😉
 
-Si te gusto el post o te ayudó en algo dale like y si tienes algún aporte, comentario o recomendación, escríbela en los comentarios. Me es de gran ayuda para mejorar mi contenido. 😃 Nos vemos en el siguiente post. 👋
+Thanks for reading! 📖 If this post helped you, please give it a reaction. And If you have any contribution, comment, doubt, or recommendation, write it down in the comments section. It helps me a lot to improve my content. 😃
+
+See you in the next post. 👋
 
 ---
 
-# Recursos
+# Resources
 * [https://git-scm.com/download/linux](https://git-scm.com/download/linux)
 * [https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-database](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-database)
 * [https://github.com/nvm-sh/nvm#about](https://github.com/nvm-sh/nvm#about)
 
 ---
+
+*If you want to read the Spanish version of this post, you can find it [here](https://netosym.medium.com/instalaciones-que-necesitar%C3%A1s-para-empezar-a-usar-wsl-en-tus-proyectos-7521d18585fe).*
