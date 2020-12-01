@@ -308,3 +308,10 @@ If you are wondering, how do I make tests for custom hooks or HTTP requests? Don
 Thanks for reading! 📖 If this post helped you, please give it a reaction. And If you have any contribution, comment, doubt, or recommendation, write it down in the comments section. It helps me a lot to improve my content. 😃
 
 See you in the next post. 👋
+
+
+---
+# Resources
+* [https://jestjs.io/docs/en/getting-started](https://jestjs.io/docs/en/getting-started)
+* [https://enzymejs.github.io/enzyme/](https://enzymejs.github.io/enzyme/)
+* [https://www.ibm.com/topics/software-testing](https://www.ibm.com/topics/software-testing)
