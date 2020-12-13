@@ -1,6 +1,6 @@
 ## Still not testing your React apps?
 
-Imagine you want to travel to France. ✈ Would you travel in a plane you know is untested? No right? It would be scary. 😨 What if that plain has engine problems or some others that may affect its functioning and cause an accident. 🚧 Testing is an imperative process, not only in software development but also in many different fields.
+Imagine you want to travel to France. ✈ Would you travel in a plane you know is untested? No right? It would be scary. 😨 What if that plane has engine problems or some others that may affect its functioning and cause an accident. 🚧 Testing is an imperative process, not only in software development but also in many different fields.
 
 In the dev world, while developing, maintaining, or refactoring our apps, there is a high likelihood we are adding bugs 🐞🐞 that may cause problems in production. That is why an automated process of testing is mandatory; it helps us to prevent bugs and other issues they can trigger.
 
