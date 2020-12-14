@@ -6,12 +6,12 @@ Hi! I'm Ernesto, and in this post, I will talk about what reducers are so you do
 
 ---
 # Table of content
-* [What is a reducer?](#what-is-a-reducer)
-* [Actions](#actions)
-  * [Type](#type)
-  * [Payload](#payload)
-* [What about the example](#what-about-the-example)
-* [Conclusions](#conclusions)
+1. [What is a reducer?](#what-is-a-reducer)
+2. [Actions](#actions)
+  1. [Type](#type)
+  2. [Payload](#payload)
+3. [What about the example](#what-about-the-example)
+4. [Conclusions](#conclusions)
 ---
 
 
