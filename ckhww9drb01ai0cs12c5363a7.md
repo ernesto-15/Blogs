@@ -304,3 +304,6 @@ See you in the next post. 👋
 * [https://reactjs.org/docs/react-api.html#reactmemo](https://reactjs.org/docs/react-api.html#reactmemo)
 * [https://reactjs.org/docs/hooks-reference.html#usecallback](https://reactjs.org/docs/hooks-reference.html#usecallback)
 * [https://reactjs.org/docs/hooks-reference.html#usememo](https://reactjs.org/docs/hooks-reference.html#usememo)
+---
+
+*If you want to read the Spanish version of this post, you can find it [here](https://netosym.medium.com/optimiza-tus-aplicaciones-de-react-con-react-memo-usecallback-y-usememo-82ab57fe162c).*
