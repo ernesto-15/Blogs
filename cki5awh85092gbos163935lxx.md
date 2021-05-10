@@ -315,7 +315,3 @@ See you in the next post. 👋
 * [https://jestjs.io/docs/en/getting-started](https://jestjs.io/docs/en/getting-started)
 * [https://enzymejs.github.io/enzyme/](https://enzymejs.github.io/enzyme/)
 * [https://www.ibm.com/topics/software-testing](https://www.ibm.com/topics/software-testing)
----
-
-
-*If you want to read the Spanish version of this post, you can find it [here](https://netosym.medium.com/a%C3%BAn-no-haces-pruebas-en-tus-aplicaciones-de-react-32ef0eec0d5e).*
